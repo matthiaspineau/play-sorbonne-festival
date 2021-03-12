@@ -1,0 +1,246 @@
+/*
+@media (min-width: 576px) { ... }
+@media (min-width: 768px) { ... }
+@media (min-width: 992px) { ... }
+@media (min-width: 1200px) { ... }
+*/
+
+
+// -------------------------------
+// Section introduction
+
+.section_introduction {
+    padding-top: 70px;
+    padding-bottom: 100px;
+    font-family: $font_caviar;
+    color: #fff;
+    // background-color: #09171e;
+}
+
+.contain_introduction {
+    display: flex;
+    flex-direction: column;
+
+    .img_sup_2, .img_sup_3{
+        display: none;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .section_introduction {
+        padding-top: 150px;
+    }
+
+    .contain_introduction {
+        display: flex;
+        flex-direction: row;
+    
+        .texte {
+            width: 65%;
+            padding-right: 15px;
+        }
+    
+        .image {
+            padding: 25px;
+            width: 35%;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .contain_introduction {
+
+        .texte {
+            width: 70%;
+        }
+    
+        .image {
+            padding: 25px;
+            width: 30%;
+            position: relative;
+        }
+
+        .img_sup_1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 20;
+        }
+
+        .img_sup_2 {
+            display: block;
+            position: absolute;
+            top: -75px;
+            right: -155px;
+            opacity: 0.5;
+            z-index: 10;
+        }
+
+    }
+}
+
+
+/*
+@media (min-width: 576px) { ... }
+@media (min-width: 768px) { ... }
+@media (min-width: 992px) { ... }
+@media (min-width: 1200px) { ... }
+*/
+
+// -------------------------------
+// Section tabs
+.section_thematique {
+    // background: url('../../image/bg_banniere_5.png') no-repeat;
+    // background-size: cover;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+.tabs_link {
+    padding: 0px 15px;
+}
+
+.tab_link {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 2rem;
+    opacity: 0.2;
+}
+
+.tab_link.active_tab_link {
+    opacity: 1;
+    border-bottom: 2px solid #fff;
+}
+
+.container_carousel {
+    overflow: hidden;
+}
+
+.contain_carousel {
+    position: relative;
+}
+// ----------------------
+// Boutton next et prev
+.btn_prev, .btn_next {
+    position: absolute;
+    top: 25%;
+    z-index: 50;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.btn_prev {
+    left: 2%;
+}
+.btn_next {
+    right: 2%;
+}
+
+.btn_prev.desactiver, .btn_next.desactiver {
+    visibility: hidden;
+}
+// ----------------
+.carousel {
+    display: flex;
+    transition: 0.3s;
+}
+
+
+.elt_item {
+    width: 100%;
+    flex-shrink: 0;
+    font-family: $font_caviar;
+    font-size: 1rem;
+    opacity: 0.3;
+    transform: scale(0.7);
+    transition: 0.5s;
+}
+
+.elt_item.item_visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.elt_tab  {
+    padding: 15px;
+}
+
+.tab_img {
+    max-width: 250px;
+}
+
+.tab_text {
+
+    span {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .section_thematique {
+        padding-top: 50px;
+    }
+
+    .btn_prev, .btn_next {
+        font-size: 4.5rem;
+    }
+
+    .btn_prev {
+        top: 45%;
+        left: 0%;
+    }
+    .btn_next {
+        top: 45%;
+        right: 0%;
+    }
+} 
+
+@media (min-width: 992px) {
+    .tabs_link {
+        padding: 0px 0px;
+    }
+
+    .elt_tab {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .left {
+            width: 60%;
+        }
+
+        .right {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .tab_img {
+        max-width: 300px;
+    }
+
+    .btn_prev {
+        top: 45%;
+        left: -1%;
+    }
+    .btn_next {
+        top: 45%;
+        right: -1%;
+    }
+} 
+
+@media (min-width: 1200px) {
+    .btn_prev {
+        top: 45%;
+        left: -5%;
+    }
+    .btn_next {
+        top: 45%;
+        right: -5%;
+    }
+}

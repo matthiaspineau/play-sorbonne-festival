@@ -1,0 +1,49 @@
+@import 'bootstrap_reboot.scss';
+@import 'container_perso.scss';
+@import 'font_face.scss';
+@import 'layout.scss';
+@import 'header.scss';
+@import 'information.scss';
+@import 'association.scss';
+@import 'footer_page.scss';
+@import 'le_festival.scss';
+@import 'index_page.scss';
+
+
+/*
+@media (min-width: 576px) { ... }
+@media (min-width: 768px) { ... }
+@media (min-width: 992px) { ... }
+@media (min-width: 1200px) { ... }
+*/
+.titre_h1 {
+    display: none;
+}
+
+.separator {
+    width: 100%;
+    height: 200px;
+}
+
+a {
+    color: inherit;
+
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+#compte_rebour {
+    font-family: $font_caviar;
+    font-size: 1.2rem;
+    color: #f9c717;
+}
+
+.detecte {
+    display: none;
+}
+
+body {
+    overflow-x: hidden;
+}

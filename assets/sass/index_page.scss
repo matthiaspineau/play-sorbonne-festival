@@ -1,0 +1,182 @@
+/*
+@media (min-width: 576px) { ... }
+@media (min-width: 768px) { ... }
+@media (min-width: 992px) { ... }
+@media (min-width: 1200px) { ... }
+*/
+.body {
+    background: url('../../image/bg_banniere_5.png') no-repeat;
+    background-size: cover;
+}
+
+.index_logo {
+    display: none;
+}
+
+.contain_element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 55px;
+
+    .logo_personnage {
+        position: relative;
+    }
+
+    .information_evenement {
+        max-width: 300px;
+    }
+}
+
+.span_horaire {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ebb22f;
+    font-family: $font_caviar;
+}
+
+@media (min-width: 768px) {
+    .contain_element {
+    
+        .information_evenement {
+            max-width: 400px;
+        }
+    }
+    
+}
+
+@media (min-width: 1200px) {
+   
+    .contain_element {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo_personnage {
+        max-width: 1200px;
+        width: 60%;
+    }
+
+    .information_evenement {
+        // max-width: 400px;
+        width: 20%;
+    }
+}
+
+// --------------------------------------------
+// animation
+.information_evenement {
+    animation-duration: 2s;
+    animation-name: rigthTranslate;
+}
+
+.image1 {
+    position: absolute;
+    right: 0;
+    top: 18%;
+    width: 42%;
+    animation-duration: 2s;
+    animation-name: aerien1;
+}
+
+
+.image2 {
+    position: absolute;
+    right: 0;
+    top: 33%;
+    width: 27%;
+    animation-duration: 2s;
+    animation-name: aerien2;
+}
+
+.image3 {
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    width: 65%;
+    animation-duration: 2s;
+    // animation-iteration-count: infinite;
+    animation-name: aerien3;
+}
+
+.image_avion {
+    animation-duration: 2s;
+    animation-name: fadeInAvion;
+}
+  
+@keyframes fadeInAvion {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes rigthTranslate {
+    from {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    75% {
+        transform: translateX(-20px);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+// ----------------
+@keyframes aerien1 {
+    from {
+        top: 0px;
+        opacity: 0;
+        padding: 155px;
+    }
+    to {
+        top: 18%;
+        opacity: 1;
+        padding: 0px;
+    }
+}
+
+@keyframes aerien2 {
+    from {
+        top: 0px;
+        opacity: 0;
+        padding: 155px;
+    }
+    to {
+        top: 33%;
+        opacity: 1;
+        padding: 0px;
+    }
+}
+
+@keyframes aerien3 {
+    from {
+        bottom: 50%;
+        right: -50px;
+        width: 20%;
+        opacity: 0;
+    }
+    to {
+        right: 0px;
+        bottom: 0%;
+        width: 65%;
+        opacity: 1;
+    }
+}
+// ---------------------------------------------
+// ---------------------------------------------

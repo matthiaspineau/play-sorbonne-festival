@@ -1,0 +1,69 @@
+
+// ---------------------------
+// partie qui sommes nous
+.section_qui {
+    padding-bottom: 30px;
+
+}
+
+.contain_qui {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #fff;
+    
+
+    h3 {
+        text-align: center;
+        font-size: 1.5rem;
+        padding-bottom: 15px;
+    }
+
+    p {
+        margin: 0px;
+        font-family: $font_caviar;
+        font-size: 1rem;
+    }
+}
+
+.rayer {
+    text-decoration: line-through;
+}
+
+@media (min-width: 992px) {
+    .section_qui {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+// -------------------------
+// partenaire
+.partenaire {
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    h3 {    
+            padding-bottom: 15px;
+            font-size: 1.5rem;
+            text-align: center;
+            color: #fff;
+        }
+}
+.contain_logo_partenaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item_logo_partenaire {
+        max-width: 150px;
+        margin: 10px;
+}
+
+@media (min-width: 576px) {
+    .item_logo_partenaire {
+        max-width: 150px;
+        margin: 25px;
+    }
+}

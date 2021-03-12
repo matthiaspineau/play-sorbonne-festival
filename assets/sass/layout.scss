@@ -1,0 +1,39 @@
+
+// $font_caviar: 'caviar_dreamsbold', 'roboto', sans-serif;
+$font_caviar: 'Raleway', sans-serif;
+$font_monoton: 'Monoton', 'roboto', cursive;
+$color_saumon: #f3705b;
+$color_vert: #099e89;
+$color_noir : #000;
+$color_blanc : #fff;
+
+body {
+    font-family: $font_caviar;
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+%btn {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 15px 9px 15px;
+    color: $color_noir;
+    border: 1px solid $color_noir;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        color: $color_blanc;
+        border: 1px solid $color_blanc;
+        background: $color_noir;
+    }
+}
+
+.btn_btn {
+    @extend %btn;
+}
